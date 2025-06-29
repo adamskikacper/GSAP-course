@@ -5,4 +5,5 @@ gsap.to(".card", {
  yoyo: true,
  boxShadow: "0 20px 80px rgba(29, 209, 161, 0.6)",
  duration: 2,
+ transform: scale(0.5),
 });
