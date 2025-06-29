@@ -12,7 +12,7 @@ const animation = gsap.to(".box", {
  opacity: 1,
  rotation: 360,
  scale: 1.25,
- borderRadius: "50%",
+ borderRadius: "20%",
  paused: true,
  duration: 5,
  repeat: -1,
