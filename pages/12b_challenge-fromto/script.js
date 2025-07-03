@@ -1,25 +1,17 @@
 import gsap from "gsap";
 
 const reactions = document.querySelectorAll("[data-emoji]");
+gsap.set(reactions, {
+ y: 150,
+ scale: 0.5,
+});
 
-gsap.fromTo(
- reactions,
- {
-  y: 150,
- },
- {
-  y: 0,
-  duration: 3,
-
-  stagger: {
-   amount: 1,
-   from: "start",
-   grid: [3, 1],
-   axis: "y",
-  },
-  ease: "power1.inOut",
- }
-);
+gsap.to(reactions, {
+ y: 0,
+ duration: 3,
+ scale: 1,
+ ease: "power1.inOut",
+});
 
 const randomRotation = () => {
  return Math.random() * 160 - 80;
